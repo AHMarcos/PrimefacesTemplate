@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:fn="http://java.sun.com/jsp/jstl/functions">
+
+    <h:head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="apple-touch-icon" sizes="57x57" href="resources/mirage-layout/images/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="resources/mirage-layout/images/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="resources/mirage-layout/images/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="resources/mirage-layout/images/favicon/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="resources/mirage-layout/images/favicon/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="resources/mirage-layout/images/favicon/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="resources/mirage-layout/images/favicon/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="resources/mirage-layout/images/favicon/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/mirage-layout/images/favicon/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192"
+              href="resources/mirage-layout/images/favicon/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="resources/mirage-layout/images/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="resources/mirage-layout/images/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="resources/mirage-layout/images/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="resources/mirage-layout/manifest.js" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="resources/mirage-layout/images/favicon/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/theme.css" />
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/fa/font-awesome.css" />
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/components.css" />
+        <script type="text/javascript" src="#{request.contextPath}/faces/resources/jquery/jquery.js"></script>
+        <script type="text/javascript" src="#{request.contextPath}/faces/resources/core.js"></script>
+        <script type="text/javascript" src="#{request.contextPath}/faces/resources/components.js"></script>
+        <script type="text/javascript" src="#{request.contextPath}/faces/resources/jquery/jquery-plugins.js"></script>
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/css/nanoscroller.css" />
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/css/primeflex.css" />
+        <link type="text/css" rel="stylesheet" href="#{request.contextPath}/faces/resources/css/layout-blue-light.css" />
+        <script
+        type="text/javascript">if (window.PrimeFaces) { PrimeFaces.settings.locale = 'en_US'; PrimeFaces.settings.projectStage = 'Development'; }</script>
+        <title>Template</title>
+        <script type="text/javascript" src="#{request.contextPath}/faces/resources/js/nanoscroller.js"></script>
+        <script type="text/javascript" src="#{request.contextPath}/faces/resources/js/layout.js"></script>
+    </h:head>
+
+    <h:body>
+
+        <div class="layout-wrapper layout-menu-light">
+
+            <div class="layout-sidebar">
+                <div class="sidebar-logo">
+                    <a href="#" class="sidebar-pin" title="Toggle Menu">
+                        <i class="fa fa-thumb-tack"></i>
+                    </a>
+                    <a href="dashboard.html"><img id="j_idt12"
+                                                  src="#{request.contextPath}/faces/resources/images/logo-mirage%402x.png" alt="" />
+                        <span class="app-name">Mirage</span>
+                    </a>
+                </div>
+
+                <div class="layout-menu-container">
+                    <div class="nano">
+                        <div class="nano-content menu-scroll-content">
+                            <form id="menuform" name="menuform" method="post"
+                                  action="https://www.primefaces.org/mirage/empty.xhtml"
+                                  enctype="application/x-www-form-urlencoded">
+                                <input type="hidden" name="menuform" value="menuform" />
+                                <ul id="menuform:j_idt14" class="layout-menu">
+                                    <li id="menuform:om_dashboard" role="menuitem"><a class="ripplelink"
+                                                                                      href="dashboard.html"><span class="menuitem-text">Dashboard</span><i
+                                                class="fa fa-fw fa-dashboard"></i></a></li>
+                                    <li id="menuform:om_components" role="menuitem"><a href="#" class="ripplelink"><span
+                                                class="menuitem-text">Components</span><i
+                                                class="fa fa-fw fa-angle-down layout-submenu-toggler"></i><i
+                                                class="fa fa-fw fa-bars"></i></a>
+                                        <ul role="menu">
+                                            <li id="menuform:om_sample" role="menuitem"><a class="ripplelink"
+                                                                                           href="sample.html"><span class="menuitem-text">Sample Page</span><i
+                                                        class="fa fa-fw fa-columns"></i></a></li>
+                                            <li id="menuform:om_forms" role="menuitem"><a class="ripplelink"
+                                                                                          href="forms.html"><span class="menuitem-text">Forms</span><i
+                                                        class="fa fa-fw fa-code"></i></a></li>
+                                            <li id="menuform:om_data" role="menuitem"><a class="ripplelink"
+                                                                                         href="data.html"><span class="menuitem-text">Data</span><i
+                                                        class="fa fa-fw fa-table"></i></a></li>
+                                            <li id="menuform:om_panels" role="menuitem"><a class="ripplelink"
+                                                                                           href="panel.html"><span class="menuitem-text">Panels</span><i
+                                                        class="fa fa-fw fa-list-alt"></i></a></li>
+                                            <li id="menuform:om_overlays" role="menuitem"><a class="ripplelink"
+                                                                                             href="overlay.html"><span class="menuitem-text">Overlays</span><i
+                                                        class="fa fa-fw fa-square"></i></a></li>
+                                            <li id="menuform:om_menus" role="menuitem"><a class="ripplelink"
+                                                                                          href="menu.html"><span class="menuitem-text">Menus</span><i
+                                                        class="fa fa-fw fa-minus-square-o"></i></a></li>
+                                            <li id="menuform:om_messages" role="menuitem"><a class="ripplelink"
+                                                                                             href="messages.html"><span class="menuitem-text">Messages</span><i
+                                                        class="fa fa-fw fa-circle-o-notch"></i></a></li>
+                                            <li id="menuform:om_charts" role="menuitem"><a class="ripplelink"
+                                                                                           href="charts.html"><span class="menuitem-text">Charts</span><i
+                                                        class="fa fa-fw fa-area-chart"></i></a></li>
+                                            <li id="menuform:om_file" role="menuitem"><a class="ripplelink"
+                                                                                         href="file.html"><span class="menuitem-text">File</span><i
+                                                        class="fa fa-fw fa-arrow-circle-o-up"></i></a></li>
+                                            <li id="menuform:om_misc" role="menuitem"><a class="ripplelink"
+                                                                                         href="misc.html"><span class="menuitem-text">Misc</span><i
+                                                        class="fa fa-fw fa-user-secret"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menuform:om_default" role="menuitem"><a href="#" class="ripplelink"><span
+                                                class="menuitem-text">Pages</span><i
+                                                class="fa fa-fw fa-angle-down layout-submenu-toggler"></i><i
+                                                class="fa fa-fw fa-cube"></i></a>
+                                        <ul role="menu">
+                                            <li id="menuform:om_empty" role="menuitem"><a class="ripplelink"
+                                                                                          href="empty.html"><span class="menuitem-text">Empty</span><i
+                                                        class="fa fa-fw fa-square-o"></i></a></li>
+                                            <li id="menuform:om_login" role="menuitem"><a class="ripplelink"
+                                                                                          href="login.html"><span class="menuitem-text">Login</span><i
+                                                        class="fa fa-fw fa-sign-in"></i></a></li>
+                                            <li id="menuform:om_db_landing" role="menuitem"><a class="ripplelink"
+                                                                                               href="landing.html"><span class="menuitem-text">Landing</span><i
+                                                        class="fa fa-fw fa-certificate"></i></a></li>
+                                            <li id="menuform:om_error" role="menuitem"><a class="ripplelink"
+                                                                                          href="error.html"><span class="menuitem-text">Error</span><i
+                                                        class="fa fa-fw fa-exclamation-circle"></i></a></li>
+                                            <li id="menuform:om_404" role="menuitem"><a class="ripplelink"
+                                                                                        href="notfound.html"><span class="menuitem-text">404</span><i
+                                                        class="fa fa-fw fa-times"></i></a></li>
+                                            <li id="menuform:om_access" role="menuitem"><a class="ripplelink"
+                                                                                           href="access.html"><span class="menuitem-text">Access Denied</span><i
+                                                        class="fa fa-fw fa-exclamation-triangle"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menuform:om_hierarchy" role="menuitem"><a href="#" class="ripplelink"><span
+                                                class="menuitem-text">Hierarchy</span><i
+                                                class="fa fa-fw fa-angle-down layout-submenu-toggler"></i><i
+                                                class="fa fa-fw fa-sitemap"></i></a>
+                                        <ul role="menu">
+                                            <li id="menuform:om_sm1" role="menuitem"><a href="#" class="ripplelink"><span
+                                                        class="menuitem-text">Submenu 1</span><i
+                                                        class="fa fa-fw fa-angle-down layout-submenu-toggler"></i><i
+                                                        class="fa fa-fw fa-sign-in"></i></a>
+                                                <ul role="menu">
+                                                    <li id="menuform:om_sm11" role="menuitem"><a href="#"
+                                                                                                 class="ripplelink"><span class="menuitem-text">Submenu
+                                                                1.1</span><i
+                                                                class="fa fa-fw fa-angle-down layout-submenu-toggler"></i><i
+                                                                class="fa fa-fw fa-sign-in"></i></a>
+                                                        <ul role="menu">
+                                                            <li id="menuform:om_lnk111" role="menuitem"><a
+                                                                    class="ripplelink" href="#"><span
+                                                                        class="menuitem-text">Link 1.1.1</span><i
+                                                                        class="fa fa-fw fa-sign-in"></i></a></li>
+                                                            <li id="menuform:om_lnk112" role="menuitem"><a
+                                                                    class="ripplelink" href="#"><span
+                                                                        class="menuitem-text">Link 1.1.2</span><i
+                                                                        class="fa fa-fw fa-sign-in"></i></a></li>
+                                                            <li id="menuform:om_lnk113" role="menuitem"><a
+                                                                    class="ripplelink" href="#"><span
+                                                                        class="menuitem-text">Link 1.1.3</span><i
+                                                                        class="fa fa-fw fa-sign-in"></i></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li id="menuform:om_sm12" role="menuitem"><a href="#"
+                                                                                                 class="ripplelink"><span class="menuitem-text">Submenu
+                                                                1.2</span><i
+                                                                class="fa fa-fw fa-angle-down layout-submenu-toggler"></i><i
+                                                                class="fa fa-fw fa-sign-in"></i></a>
+                                                        <ul role="menu">
+                                                            <li id="menuform:om_lnk121" role="menuitem"><a
+                                                                    class="ripplelink" href="#"><span
+                                                                        class="menuitem-text">Link 1.2.1</span><i
+                                                                        class="fa fa-fw fa-sign-in"></i></a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li id="menuform:om_sm2" role="menuitem"><a href="#" class="ripplelink"><span
+                                                        class="menuitem-text">Submenu 2</span><i
+                                                        class="fa fa-fw fa-angle-down layout-submenu-toggler"></i><i
+                                                        class="fa fa-fw fa-sign-in"></i></a>
+                                                <ul role="menu">
+                                                    <li id="menuform:om_sm21" role="menuitem"><a href="#"
+                                                                                                 class="ripplelink"><span class="menuitem-text">Submenu
+                                                                2.1</span><i
+                                                                class="fa fa-fw fa-angle-down layout-submenu-toggler"></i><i
+                                                                class="fa fa-fw fa-sign-in"></i></a>
+                                                        <ul role="menu">
+                                                            <li id="menuform:om_lnk211" role="menuitem"><a
+                                                                    class="ripplelink" href="#"><span
+                                                                        class="menuitem-text">Link 2.1.1</span><i
+                                                                        class="fa fa-fw fa-sign-in"></i></a></li>
+                                                            <li id="menuform:om_lnk212" role="menuitem"><a
+                                                                    class="ripplelink" href="#"><span
+                                                                        class="menuitem-text">Link 2.1.2</span><i
+                                                                        class="fa fa-fw fa-sign-in"></i></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li id="menuform:om_sm22" role="menuitem"><a href="#"
+                                                                                                 class="ripplelink"><span class="menuitem-text">Submenu
+                                                                2.2</span><i
+                                                                class="fa fa-fw fa-angle-down layout-submenu-toggler"></i><i
+                                                                class="fa fa-fw fa-sign-in"></i></a>
+                                                        <ul role="menu">
+                                                            <li id="menuform:om_lnk221" role="menuitem"><a
+                                                                    class="ripplelink" href="#"><span
+                                                                        class="menuitem-text">Link 2.2.1</span><i
+                                                                        class="fa fa-fw fa-sign-in"></i></a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menuform:om_doc" role="menuitem"><a class="ripplelink" href="docs.html"><span
+                                                class="menuitem-text">Docs</span><i class="fa fa-fw fa-file-code-o"></i></a>
+                                    </li>
+                                    <li id="menuform:om_buy" role="menuitem"><a class="ripplelink"
+                                                                                href="https://www.primefaces.org/store"><span class="menuitem-text">Buy
+                                                Now</span><i class="fa fa-fw fa-credit-card-alt"></i></a></li>
+                                </ul>
+                                <script id="menuform:j_idt14_s"
+                                type="text/javascript">PrimeFaces.cw("Mirage", "widget_menuform_j_idt14", { id: "menuform:j_idt14", closeDelay: "250" });</script>
+                                <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0"
+                                       value="154664649310953936:4177459444942003474" autocomplete="off" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layout-main">
+
+                <div class="layout-topbar">
+                    <div class="layout-topbar-wrapper">
+                        <div class="layout-topbar-left">
+                            <div class="layout-topbar-logo-wrapper">
+                                <a href="dashboard.html" class="layout-topbar-logo"><img id="j_idt18"
+                                                                                         src="#{request.contextPath}/faces/resources/images/logo-mirage%402x.png" alt="" />
+                                    <span class="app-name">Mirage</span>
+                                </a>
+                            </div>
+
+                            <a href="#" class="sidebar-menu-button">
+                                <i class="fa fa-bars"></i>
+                            </a>
+
+                            <a href="#" class="megamenu-mobile-button">
+                                <i class="fa fa-align-right megamenu-icon"></i>
+                            </a>
+
+                            <a href="#" class="topbar-menu-mobile-button">
+                                <i class="fa fa-ellipsis-v"></i>
+                            </a>
+
+                            <!-- Mega Menu -->
+                            <div class="layout-megamenu-wrapper">
+                                <a class="layout-megamenu-button" href="#">
+                                    <i class="fa fa-comment"></i>
+                                    Mega Menu
+                                </a>
+                                <ul class="layout-megamenu">
+                                    <li>
+                                        <a href="#">JavaServer Faces <i class="fa fa-angle-down"></i></a>
+                                        <ul>
+                                            <li class="active-row ">
+                                                <i class="fa fa-circle"></i>
+                                                <span>
+                                                    <h3>PrimeFaces</h3>
+                                                    <span>UI Components for JSF</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <span>
+                                                    <h3>Premium Templates</h3>
+                                                    <span>UI Components for JSF</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <span>
+                                                    <h3>Extensions</h3>
+                                                    <span>UI Components for JSF</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Angular <i class="fa fa-angle-down"></i></a>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <span>
+                                                    <h3>PrimeNG</h3>
+                                                    <span>UI Components for Angular</span>
+                                                </span>
+
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <span>
+                                                    <h3>Premium Templates</h3>
+                                                    <span>UI Components for Angular</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">React <i class="fa fa-angle-down"></i></a>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <span>
+                                                    <h3>PrimeReact</h3>
+                                                    <span>UI Components for React</span>
+                                                </span>
+                                            </li>
+                                            <li class="active-row">
+                                                <i class="fa fa-circle"></i>
+                                                <span>
+                                                    <h3>Premium Templates</h3>
+                                                    <span>UI Components for React</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="layout-topbar-right">
+                            <ul class="layout-topbar-actions">
+                                <li class="search-item topbar-item">
+                                    <a href="#" class="topbar-search-mobile-button">
+                                        <i class="topbar-icon fa fa-search"></i>
+                                    </a>
+                                    <ul class="search-item-submenu">
+                                        <li>
+                                            <form id="j_idt20" name="j_idt20" method="post"
+                                                  action="https://www.primefaces.org/mirage/empty.xhtml"
+                                                  enctype="application/x-www-form-urlencoded" onsubmit="return false;">
+                                                <input type="hidden" name="j_idt20" value="j_idt20" />
+                                                <span class="md-inputfield search-input-wrapper"><input id="j_idt20:j_idt22"
+                                                                                                        name="j_idt20:j_idt22" type="text"
+                                                                                                        class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"
+                                                                                                        placeholder="Search..." />
+                                                    <script id="j_idt20:j_idt22_s"
+                                                    type="text/javascript">$(function () { PrimeFaces.cw("InputText", "widget_j_idt20_j_idt22", { id: "j_idt20:j_idt22", maxlength: - 2147483648 }); });</script>
+                                                    <i class="fa fa-search"></i></span><input type="hidden"
+                                                                                          name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:6"
+                                                                                          value="154664649310953936:4177459444942003474" autocomplete="off" />
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="topbar-item">
+                                    <a href="#">
+                                        <i class="topbar-icon fa fa-calendar"></i>
+                                    </a>
+                                    <ul>
+                                        <li class="layout-submenu-header">
+                                            <h1>Calendar</h1>
+                                        </li>
+                                        <li class="calendar">
+                                            <form id="j_idt25" name="j_idt25" method="post"
+                                                  action="https://www.primefaces.org/mirage/empty.xhtml"
+                                                  enctype="application/x-www-form-urlencoded">
+                                                <input type="hidden" name="j_idt25" value="j_idt25" />
+                                                <span id="j_idt25:j_idt26" class="ui-calendar">
+                                                    <div id="j_idt25:j_idt26_inline"></div><input id="j_idt25:j_idt26_input"
+                                                                                                  name="j_idt25:j_idt26_input" type="hidden" />
+                                                </span>
+                                                <script id="j_idt25:j_idt26_s"
+                                                type="text/javascript">$(function () { PrimeFaces.cw("Calendar", "widget_j_idt25_j_idt26", { id: "j_idt25:j_idt26", popup: false, locale: "en_US", dateFormat: "m\/d\/y" }); });</script>
+                                                <input type="hidden" name="javax.faces.ViewState"
+                                                       id="j_id1:javax.faces.ViewState:8"
+                                                       value="154664649310953936:4177459444942003474" autocomplete="off" />
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="topbar-item">
+                                    <a href="#">
+                                        <i class="topbar-icon fa fa-paper-plane"></i>
+                                    </a>
+                                    <ul>
+                                        <li class="layout-submenu-header">
+                                            <h1>Messages</h1>
+                                            <span>Today, you have new 4 messages</span>
+                                        </li>
+                                        <li class="layout-submenu-item"><img id="j_idt28"
+                                                                             src="#{request.contextPath}/faces/resources/images/topbar/avatar-cayla.png"
+                                                                             alt="" width="35" />
+                                            <div class="menu-text">
+                                                <p>Override the digital divide</p>
+                                                <span>Cayla Brister</span>
+                                            </div>
+                                            <i class="fa fa-angle-right"></i>
+                                        </li>
+                                        <li class="layout-submenu-item"><img id="j_idt30"
+                                                                             src="#{request.contextPath}/faces/resources/images/topbar/avatar-gabie.png"
+                                                                             alt="" width="35" />
+                                            <div class="menu-text">
+                                                <p>Nanotechnology immersion</p>
+                                                <span>Gabie Sheber</span>
+                                            </div>
+                                            <i class="fa fa-angle-right"></i>
+                                        </li>
+                                        <li class="layout-submenu-item"><img id="j_idt32"
+                                                                             src="#{request.contextPath}/faces/resources/images/topbar/avatar-gaspar.png"
+                                                                             alt="" width="35" />
+                                            <div class="menu-text">
+                                                <p>User generated content</p>
+                                                <span>Gaspar Antunes</span>
+                                            </div>
+                                            <i class="fa fa-angle-right"></i>
+                                        </li>
+                                        <li class="layout-submenu-item"><img id="j_idt34"
+                                                                             src="#{request.contextPath}/faces/resources/images/topbar/avatar-tatiana.png"
+                                                                             alt="" width="35" />
+                                            <div class="menu-text">
+                                                <p>The holistic world view</p>
+                                                <span>Tatiana Gagelman</span>
+                                            </div>
+                                            <i class="fa fa-angle-right"></i>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="topbar-item">
+                                    <a href="#">
+                                        <i class="topbar-icon fa fa-gift"></i>
+                                    </a>
+                                    <ul>
+                                        <li class="layout-submenu-header">
+                                            <h1>Deals</h1>
+                                        </li>
+
+                                        <li class="deals">
+                                            <ul>
+                                                <li><img id="j_idt36"
+                                                         src="#{request.contextPath}/faces/resources/images/topbar/deal-icon-sapphire.png"
+                                                         alt="" width="35" />
+                                                    <div class="menu-text">
+                                                        <p>Sapphire</p>
+                                                        <span>For Angular</span>
+                                                    </div>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </li>
+                                                <li><img id="j_idt38"
+                                                         src="#{request.contextPath}/faces/resources/images/topbar/deal-icon-roma.png"
+                                                         alt="" width="35" />
+                                                    <div class="menu-text">
+                                                        <p>Roma</p>
+                                                        <span>Minimalism</span>
+                                                    </div>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </li>
+                                                <li><img id="j_idt40"
+                                                         src="#{request.contextPath}/faces/resources/images/topbar/deal-icon-babylon.png"
+                                                         alt="" width="35" />
+                                                    <div class="menu-text">
+                                                        <p>Babylon</p>
+                                                        <span>Powerful</span>
+                                                    </div>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li><img id="j_idt42"
+                                                         src="#{request.contextPath}/faces/resources/images/topbar/deal-icon-harmony.png"
+                                                         alt="" width="35" />
+                                                    <div class="menu-text">
+                                                        <p>Harmony</p>
+                                                        <span>USWDS</span>
+                                                    </div>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </li>
+                                                <li><img id="j_idt44"
+                                                         src="#{request.contextPath}/faces/resources/images/topbar/deal-icon-prestige.png"
+                                                         alt="" width="35" />
+                                                    <div class="menu-text">
+                                                        <p>Prestige</p>
+                                                        <span>Elegancy</span>
+                                                    </div>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </li>
+                                                <li><img id="j_idt46"
+                                                         src="#{request.contextPath}/faces/resources/images/topbar/deal-icon-ultima.png"
+                                                         alt="" width="35" />
+                                                    <div class="menu-text">
+                                                        <p>Ultima</p>
+                                                        <span>Material</span>
+                                                    </div>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="topbar-item profile-item">
+                                    <a href="#">
+                                        <span class="profile-image-wrapper"><img id="j_idt48"
+                                                                                 src="#{request.contextPath}/faces/resources/images/topbar/avatar-eklund.png"
+                                                                                 alt="" />
+                                        </span>
+                                        <span class="profile-info-wrapper">
+                                            <h3>Olivia Eklund</h3>
+                                            <span>Design</span>
+                                        </span>
+                                    </a>
+                                    <ul class="profile-item-submenu">
+                                        <li class="profile-submenu-header">
+                                            <div class="performance">
+                                                <span>Weekly Performance</span><img id="j_idt50"
+                                                                                    src="#{request.contextPath}/faces/resources/images/topbar/asset-bars.svg"
+                                                                                    alt="" />
+                                            </div>
+                                            <div class="profile"><img id="j_idt52"
+                                                                      src="#{request.contextPath}/faces/resources/images/topbar/avatar-eklund.png"
+                                                                      alt="" width="40" />
+                                                <h1>Olivia Eklund</h1>
+                                                <span>Design</span>
+                                            </div>
+                                        </li>
+                                        <li class="layout-submenu-item">
+                                            <i class="fa fa-server icon icon-1"></i>
+                                            <div class="menu-text">
+                                                <p>Tasks</p>
+                                                <span>3 open issues</span>
+                                            </div>
+                                            <i class="fa fa-angle-right"></i>
+                                        </li>
+                                        <li class="layout-submenu-item">
+                                            <i class="fa fa-credit-card icon icon-2"></i>
+                                            <div class="menu-text">
+                                                <p>Payments</p>
+                                                <span>24 new</span>
+                                            </div>
+                                            <i class="fa fa-angle-right"></i>
+                                        </li>
+                                        <li class="layout-submenu-item">
+                                            <i class="fa fa-users icon icon-3"></i>
+                                            <div class="menu-text">
+                                                <p>Clients</p>
+                                                <span>+80%</span>
+                                            </div>
+                                            <i class="fa fa-angle-right"></i>
+                                        </li>
+                                        <li class="layout-submenu-footer">
+                                            <button class="signout-button">Sign Out</button>
+                                            <button class="buy-mirage-button">Buy Mirage</button>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="layout-rightpanel-button">
+                                        <i class="fa fa-arrow-left"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="profile-mobile-wrapper">
+                                <li class="topbar-item profile-item">
+                                    <a href="#">
+                                        <span class="profile-image-wrapper"><img id="j_idt54"
+                                                                                 src="#{request.contextPath}/faces/resources/images/topbar/avatar-eklund.png"
+                                                                                 alt="" />
+                                        </span>
+                                        <span class="profile-info-wrapper">
+                                            <h3>Olivia Eklund</h3>
+                                            <span>Design</span>
+                                        </span>
+                                    </a>
+                                    <ul>
+                                        <li class="profile-submenu-header">
+                                            <div class="performance">
+                                                <span>Weekly Performance</span><img id="j_idt56"
+                                                                                    src="#{request.contextPath}/faces/resources/images/topbar/asset-bars.svg"
+                                                                                    alt="" />
+                                            </div>
+                                            <div class="profile"><img id="j_idt58"
+                                                                      src="#{request.contextPath}/faces/resources/images/topbar/avatar-eklund.png"
+                                                                      alt="" width="45" />
+                                                <h1>Olivia Eklund</h1>
+                                                <span>Design</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-server icon icon-1"></i>
+                                            <div class="menu-text">
+                                                <p>Tasks</p>
+                                                <span>3 open issues</span>
+                                            </div>
+                                            <i class="fa fa-angle-right"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-credit-card icon icon-2"></i>
+                                            <div class="menu-text">
+                                                <p>Payments</p>
+                                                <span>24 new</span>
+                                            </div>
+                                            <i class="fa fa-angle-right"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-users icon icon-3"></i>
+                                            <div class="menu-text">
+                                                <p>Clients</p>
+                                                <span>+80%</span>
+                                            </div>
+                                            <i class="fa fa-angle-right"></i>
+                                        </li>
+                                        <li class="layout-submenu-footer">
+                                            <button class="signout-button">Sign Out</button>
+                                            <button class="buy-mirage-button">Buy Mirage</button>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layout-rightpanel">
+                    <div class="right-panel-header">
+                        <div class="title">
+                            <span>Today</span>
+                            <h1>Wednesday, 26 Jun</h1>
+                        </div>
+                        <a href="#" class="rightpanel-exit-button">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                    <div class="right-panel-content">
+                        <form id="j_idt61" name="j_idt61" method="post"
+                              action="https://www.primefaces.org/mirage/empty.xhtml"
+                              enctype="application/x-www-form-urlencoded">
+                            <input type="hidden" name="j_idt61" value="j_idt61" />
+
+                            <div class="right-panel-content-row">
+                                <div class="tasks">
+                                    <div class="tasks-header">
+                                        <div class="title">
+                                            <h1>Tasks</h1>
+                                        </div>
+                                        <div class="tasks-info">
+                                            <span>You have</span><span class="highlighted"> 2 tasks</span><span>
+                                                today</span>
+                                        </div>
+                                    </div>
+                                    <ul class="tasks-list">
+                                        <li class="tasks-list-item">
+                                            <div class="checkbox">
+                                                <div id="j_idt61:j_idt63"
+                                                     class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input
+                                                            id="j_idt61:j_idt63_input" name="j_idt61:j_idt63_input"
+                                                            type="checkbox" autocomplete="off" aria-hidden="true"
+                                                            aria-checked="false" /></div>
+                                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default">
+                                                        <span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span>
+                                                    </div>
+                                                </div>
+                                                <script id="j_idt61:j_idt63_s"
+                                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt61_j_idt63", { id: "j_idt61:j_idt63" }); });</script>
+                                                <p>Sales Report</p>
+                                            </div>
+                                            <div class="tasks-day">
+                                                <span class="time">Today</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="tasks-list-item">
+                                            <div class="checkbox">
+                                                <div id="j_idt61:j_idt65"
+                                                     class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input
+                                                            id="j_idt61:j_idt65_input" name="j_idt61:j_idt65_input"
+                                                            type="checkbox" autocomplete="off" aria-hidden="true"
+                                                            aria-checked="false" /></div>
+                                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default">
+                                                        <span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span>
+                                                    </div>
+                                                </div>
+                                                <script id="j_idt61:j_idt65_s"
+                                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt61_j_idt65", { id: "j_idt61:j_idt65" }); });</script>
+                                                <p>Pay Invoices</p>
+                                            </div>
+                                            <div class="tasks-day">
+                                                <span class="time">Today</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="tasks-list-item">
+                                            <div class="checkbox">
+                                                <div id="j_idt61:j_idt67"
+                                                     class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input
+                                                            id="j_idt61:j_idt67_input" name="j_idt61:j_idt67_input"
+                                                            type="checkbox" autocomplete="off" aria-hidden="true"
+                                                            aria-checked="false" /></div>
+                                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default">
+                                                        <span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span>
+                                                    </div>
+                                                </div>
+                                                <script id="j_idt61:j_idt67_s"
+                                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt61_j_idt67", { id: "j_idt61:j_idt67" }); });</script>
+                                                <p>Customer Meeting</p>
+                                            </div>
+                                            <div class="tasks-day">
+                                                <span class="time later">Later</span>
+                                            </div>
+                                        </li>
+
+                                        <li class="tasks-list-item">
+                                            <div class="checkbox">
+                                                <div id="j_idt61:j_idt69"
+                                                     class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input
+                                                            id="j_idt61:j_idt69_input" name="j_idt61:j_idt69_input"
+                                                            type="checkbox" autocomplete="off" aria-hidden="true"
+                                                            aria-checked="false" /></div>
+                                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default">
+                                                        <span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span>
+                                                    </div>
+                                                </div>
+                                                <script id="j_idt61:j_idt69_s"
+                                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt61_j_idt69", { id: "j_idt61:j_idt69" }); });</script>
+                                                <p>Expense Reports</p>
+                                            </div>
+                                            <div class="tasks-day">
+                                                <span class="time later">Later</span>
+                                            </div>
+                                        </li>
+                                        <li class="tasks-list-item">
+                                            <div class="checkbox">
+                                                <div id="j_idt61:j_idt71"
+                                                     class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input
+                                                            id="j_idt61:j_idt71_input" name="j_idt61:j_idt71_input"
+                                                            type="checkbox" autocomplete="off" aria-hidden="true"
+                                                            aria-checked="false" /></div>
+                                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default">
+                                                        <span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span>
+                                                    </div>
+                                                </div>
+                                                <script id="j_idt61:j_idt71_s"
+                                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt61_j_idt71", { id: "j_idt61:j_idt71" }); });</script>
+                                                <p>Plane Tickets</p>
+                                            </div>
+                                            <div class="tasks-day">
+                                                <span class="time later">Later</span>
+                                            </div>
+                                        </li>
+                                        <li class="tasks-list-item">
+                                            <div class="checkbox">
+                                                <div id="j_idt61:j_idt73"
+                                                     class="ui-selectbooleancheckbox ui-chkbox ui-widget">
+                                                    <div class="ui-helper-hidden-accessible"><input
+                                                            id="j_idt61:j_idt73_input" name="j_idt61:j_idt73_input"
+                                                            type="checkbox" autocomplete="off" aria-hidden="true"
+                                                            aria-checked="false" /></div>
+                                                    <div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default">
+                                                        <span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span>
+                                                    </div>
+                                                </div>
+                                                <script id="j_idt61:j_idt73_s"
+                                                type="text/javascript">$(function () { PrimeFaces.cw("SelectBooleanCheckbox", "widget_j_idt61_j_idt73", { id: "j_idt61:j_idt73" }); });</script>
+                                                <p>Dinner with Tony</p>
+                                            </div>
+                                            <div class="tasks-day">
+                                                <span class="time later">Later</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="right-panel-content-row">
+                                <div class="calendar">
+                                    <h1>Calendar</h1><span id="j_idt61:j_idt75" class="ui-calendar">
+                                        <div id="j_idt61:j_idt75_inline"></div><input id="j_idt61:j_idt75_input"
+                                                                                      name="j_idt61:j_idt75_input" type="hidden" />
+                                    </span>
+                                    <script id="j_idt61:j_idt75_s"
+                                    type="text/javascript">$(function () { PrimeFaces.cw("Calendar", "widget_j_idt61_j_idt75", { id: "j_idt61:j_idt75", popup: false, locale: "en_US", dateFormat: "m\/d\/y" }); });</script>
+                                </div>
+                            </div>
+
+                            <div class="right-panel-content-row">
+                                <div class="weather">
+                                    <h1>Weather</h1>
+                                    <ul class="weather-list">
+                                        <li class="weather-list-item">
+                                            <div class="time-location">
+                                                <span>15.03</span>
+                                                <p>Lille</p>
+                                            </div>
+                                            <div class="weather-info">
+                                                <div class="weather-icon icon-1"><img id="j_idt61:j_idt77"
+                                                                                      src="#{request.contextPath}/faces/resources/images/rightpanel/weather-icon-1.svg"
+                                                                                      alt="" />
+                                                </div>
+                                                <div class="weather-value">
+                                                    31°
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="weather-list-item">
+                                            <div class="time-location">
+                                                <span>15.03</span>
+                                                <p>Barcelona</p>
+                                            </div>
+                                            <div class="weather-info">
+                                                <div class="weather-icon icon-2"><img id="j_idt61:j_idt79"
+                                                                                      src="#{request.contextPath}/faces/resources/images/rightpanel/weather-icon-3.svg"
+                                                                                      alt="" />
+                                                </div>
+                                                <div class="weather-value">
+                                                    26°
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="weather-list-item">
+                                            <div class="time-location">
+                                                <span>09.03</span>
+                                                <p>New York</p>
+                                            </div>
+                                            <div class="weather-info">
+                                                <div class="weather-icon icon-1"><img id="j_idt61:j_idt81"
+                                                                                      src="#{request.contextPath}/faces/resources/images/rightpanel/weathericon-4.svg"
+                                                                                      alt="" />
+                                                </div>
+                                                <div class="weather-value">
+                                                    23°
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="weather-list-item">
+                                            <div class="time-location">
+                                                <span>15.03</span>
+                                                <p>Amsterdam</p>
+                                            </div>
+                                            <div class="weather-info">
+                                                <div class="weather-icon icon-3"><img id="j_idt61:j_idt83"
+                                                                                      src="#{request.contextPath}/faces/resources/images/rightpanel/weather-icon-4.svg"
+                                                                                      alt="" />
+                                                </div>
+                                                <div class="weather-value">
+                                                    31°
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="weather-list-item">
+                                            <div class="time-location">
+                                                <span>09.03</span>
+                                                <p>Antalya</p>
+                                            </div>
+                                            <div class="weather-info">
+                                                <div class="weather-icon icon-4"><img id="j_idt61:j_idt85"
+                                                                                      src="#{request.contextPath}/faces/resources/images/rightpanel/weather-icon-4.svg"
+                                                                                      alt="" />
+                                                </div>
+                                                <div class="weather-value">
+                                                    33°
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:32"
+                                         value="154664649310953936:4177459444942003474" autocomplete="off" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="layout-breadcrumb">
+                    <div class="breadcrumb">
+                        <div class="route-bar-breadcrumb">
+                            <li>Pages</li>
+                            <li><i class="fa fa-angle-right"></i></li>
+                            <li><a href="empty.html" class="ui-link ui-widget">Empty</a></li>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                
+
+                
+                <a href="#" id="layout-config-button" class="layout-config-button">
+                    <i class="fa fa-cog"></i>
+                </a>
+
+                <div id="layout-config" class="layout-config">
+                    <div class="layout-config-content">
+                        <a href="#" class="layout-config-close">
+                            <i class="fa fa-times"></i>
+                        </a>
+                        <form id="config-form" name="config-form" method="post"
+                              action="https://www.primefaces.org/mirage/empty.xhtml"
+                              enctype="application/x-www-form-urlencoded">
+                            <input type="hidden" name="config-form" value="config-form" />
+                            <div id="config-form:config-form-tabs"
+                                 class="ui-tabs ui-widget ui-widget-content ui-corner-all ui-hidden-container ui-tabs-top"
+                                 data-widget="widget_config_form_config_form_tabs">
+                                <ul class="ui-tabs-nav ui-helper-reset ui-widget-header ui-corner-all" role="tablist">
+                                    <li class="ui-tabs-header ui-state-default ui-tabs-selected ui-state-active ui-corner-top"
+                                        role="tab" aria-expanded="true" aria-selected="true" data-index="0"><a
+                                            href="#config-form:config-form-tabs:j_idt103" tabindex="-1">Light or Dark</a>
+                                    </li>
+                                    <li class="ui-tabs-header ui-state-default ui-corner-top" role="tab"
+                                        aria-expanded="false" aria-selected="false" data-index="1"><a
+                                            href="#config-form:config-form-tabs:j_idt117" tabindex="-1">Menu</a></li>
+                                    <li class="ui-tabs-header ui-state-default ui-corner-top" role="tab"
+                                        aria-expanded="false" aria-selected="false" data-index="2"><a
+                                            href="#config-form:config-form-tabs:j_idt148" tabindex="-1">Components</a></li>
+                                </ul>
+                                <div class="ui-tabs-panels">
+                                    <div id="config-form:config-form-tabs:j_idt103"
+                                         class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel"
+                                         aria-hidden="false" data-index="0">
+                                        <div id="config-form:config-form-tabs:lightordark-panel"
+                                             class="ui-outputpanel ui-widget">
+                                            <h1>Light or Dark</h1>
+                                            <p>Mirage offers all dark dashboard &amp; theme design for dark lovers.</p>
+                                            <div class="p-grid p-justify-center p-align-center">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="config-form:config-form-tabs:j_idt117"
+                                         class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-helper-hidden"
+                                         role="tabpanel" aria-hidden="true" data-index="1">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                                <input type="hidden" id="config-form:config-form-tabs_activeIndex"
+                                             name="config-form:config-form-tabs_activeIndex" value="0" autocomplete="off" />
+                            </div>
+                            <script id="config-form:config-form-tabs_s"
+                            type="text/javascript">$(function () { PrimeFaces.cw("TabView", "widget_config_form_config_form_tabs", { id: "config-form:config-form-tabs", effectDuration: "normal", scrollable: false }); });</script>
+                            <input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:61"
+                                   value="154664649310953936:4177459444942003474" autocomplete="off" />
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="layout-main-mask"></div>
+            </div>
+        </div>
+        <div id="j_idt160" style="width:32px;height:32px;position:fixed;right:7px;bottom:7px;z-index: 1000002">
+            <div id="j_idt160_start" style="display:none">
+                <i class="fa fa-circle-o-notch fa-spin ajax-loader" aria-hidden="true"></i></div>
+            <div id="j_idt160_complete" style="display:none"></div>
+        </div>
+        <script id="j_idt160_s"
+        type="text/javascript">$(function () { PrimeFaces.cw("AjaxStatus", "widget_j_idt160", { id: "j_idt160" }); });</script>        
+    </h:body>
+
+</html>
